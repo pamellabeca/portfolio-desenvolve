@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #131313;
+    box-sizing: border-box
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 2% 0% 0% 15%;
+}
+
+.nav-items{
+    display: flex;
+    gap: 80px;
+}
+
+.nav-items-item{
+    transition: color ease-in 0.3s;
+}
+
+.nav-items-item:hover{
+    color: #9B1B30;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 82px;
+
+    padding: 8% 15%;
+}
+
+.apresentation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 50%;
+    gap: 40px;
+}
+
+h1{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+strong{
+    color: #9B1B30;
+}
+
+.apresentation-paragraf{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.buttons-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+}
+
+h2{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.buttons-links-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    border: #9B1B30 solid 2px;
+    border-radius: 10px;
+    padding: 2% 4%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    width: 50%;
+    background-color: #131313;
+
+    transition: background-color 0.3s ease-out;
+}
+
+.buttons-links-link:hover{
+    background-color: #1f1f1f;
+}
+
+.imagem-perfil{
+    width: 50%;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-paragraf{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+footer{
+    background-color: #9B1B30;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 1200px) {
+
+    header{
+        padding: 10%;
+    } 
+
+    .nav-items{
+        justify-content: center;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentation{
+        width: auto;
+    }
+    
+}
